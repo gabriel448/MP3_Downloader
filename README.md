@@ -1,3 +1,5 @@
+[AVISO] Eh necessario ter o ffmpeg instalado no computador
+
 MP3 Downloader
 Este projeto é um script simples em Python para baixar áudios do YouTube e convertê-los para o formato MP3. Ele utiliza a biblioteca yt-dlp para o download e a biblioteca colorama para uma melhor visualização do progresso.
 
