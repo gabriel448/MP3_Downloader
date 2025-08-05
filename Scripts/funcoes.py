@@ -4,7 +4,7 @@ from yt_dlp import YoutubeDL
 from colorama import Fore, Style, init
 init(autoreset=True)
 
-
+#definindo um CustomLogger pra silenciar as milhares de mensagens que o yt_dlp mande pro terminal enquanto faz o download
 class CustomLogger:
     def debug(self, msg):
         pass
@@ -17,7 +17,7 @@ class CustomLogger:
 
     def error(self, msg):
         print(f'[ERRO] ocorreu um problema: {msg}')
-
+#funcao que recebe as informacoes de progresso e faz a barra dos downloads
 def progresso_hook(d):
     if d['status'] == 'downloading':
         if d.get('total_bytes') is not None and d.get('downloaded_bytes') is not None:
@@ -44,6 +44,7 @@ def progresso_hook(d):
 
 def playlist_downloader(url, local):
     try:   
+        #basicamente instrucoes de download do arquivo
         ydl_opts = {
             'format': 'bestaudio/best',
             'outtmpl': os.path.join(local,'%(playlist)s','%(title)s.%(ext)s'),
@@ -78,6 +79,7 @@ def playlist_downloader(url, local):
 
 def mp3_downloader(url, local):
     try:   
+        #basicamente instrucoes de download do arquivo dnv
         ydl_opts = {
             'format': 'bestaudio/best',
             'outtmpl': os.path.join(local, '%(title)s.%(ext)s'),
@@ -108,13 +110,14 @@ def mp3_downloader(url, local):
     except Exception as e:
         print(f'\n[ERRO] Falaha inesperada: {e}')
 
+#verificando se a url eh do youtube e se eh valida
 def url_verify(url):
     if not url.startswith(("http://", "https://")) or "youtu" not in url:
         os.system('cls')
         print("URL incorreta! forneca uma URL do YouTube.")
         return True
     return False
-
+#verificando se o local existe, se nao existir ele cria um com o nome fornecido
 def local_verify(local):
     if local.strip() == "":
         return os.getcwd()

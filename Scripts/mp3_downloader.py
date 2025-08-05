@@ -5,7 +5,7 @@ from funcoes import url_verify, local_verify,playlist_downloader,mp3_downloader
 
 url = None
 
-
+#loop principal de acoes
 while True:
     local = None
     i = None
@@ -21,13 +21,13 @@ while True:
     url = input("Cole a url aqui: ")
     if url_verify(url):
         continue
-
+    
     print()
     local = input('Digite o local de download (caso seja o mesmo do programa deixe em branco): ')
     local = local_verify(local)
     if local==0:
         continue
-
+    #definindo de vai baixar playlist ou um video individual
     if p_or_v.startswith('p'):
         os.system('cls')
         sucesso = playlist_downloader(url, local)
