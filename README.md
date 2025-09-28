@@ -28,8 +28,8 @@ Para executar este projeto a partir do código-fonte, você precisará ter o Pyt
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
-    cd seu-repositorio
+    git clone https://github.com/gabriel448/MP3_Downloader.git
+    cd MP3_Downloader
     ```
 
 2.  **Instale as dependências do Python:**
