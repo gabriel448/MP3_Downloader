@@ -1,0 +1,44 @@
+# Arquivos de Cache e Bytecode do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ambientes Virtuais
+# Nunca envie seu ambiente virtual para o repositório
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Arquivos de dependências e builds
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Arquivos de configuração de IDEs e Editores
+# Evita conflitos de configuração entre diferentes desenvolvedores
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos específicos do Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos gerados pelo yt-dlp e FFmpeg
+# IMPORTANTE: Ignora os arquivos de áudio baixados e temporários
+*.mp3
+*.m4a
+*.webm
+*.part
+
+# Arquivos de log e bancos de dados temporários
+*.log
+*.sqlite3
+
+# Arquivos de pacotes (caso você use PyInstaller ou similar)
+*.spec
