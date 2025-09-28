@@ -7,7 +7,7 @@
 
 Este projeto é uma aplicação de desktop para Windows que permite baixar o áudio de vídeos ou playlists do YouTube e salvá-los como arquivos MP3. A interface gráfica foi construída com PySide6 para ser simples e intuitiva.
 
-O programa utiliza a biblioteca 'yt-dlp' para gerenciar os downloads e o 'FFmpeg' (já incluído no projeto) para realizar a conversão para MP3, garantindo alta qualidade de áudio. ##O executavel se encontra na pasta dist, basta abrir e usar.
+O programa utiliza a biblioteca 'yt-dlp' para gerenciar os downloads e o 'FFmpeg' (já incluído no projeto) para realizar a conversão para MP3, garantindo alta qualidade de áudio. ## O executavel se encontra na pasta dist, basta abrir e usar.
 
 --------------------
 -- Funcionalidades --
